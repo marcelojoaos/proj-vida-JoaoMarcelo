@@ -2,11 +2,11 @@
 
 :root{
     --cor-de-fundo: #000000;
-    --verde: #5b0b76;
-    --branco: #FFFFFF;
-    --botao-ativo: #8a8a8a;
-    --botao-inativo: #d93c3c;
-    --texto-fundo: #0088e9;
+    --verde: #48ff00;
+    --branco: #00328f;
+    --botao-ativo: #00ffea;
+    --botao-inativo: #ffa600;
+    --texto-fundo: #231b75;
 }
 
 body{
@@ -62,14 +62,9 @@ body{
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
-
-    
 }
 
-
-
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px)}
     .botoes{
         display: flex;
     }
@@ -79,11 +74,3 @@ body{
     .botao:last-child{
         border-radius: 0 40px 0 0;
     }  
-}
-
-
-
-
-
-
-
