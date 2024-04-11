@@ -6,13 +6,13 @@
     --branco: #00328f;
     --botao-ativo: #00ffea;
     --botao-inativo: #ffa600;
-    --texto-fundo: #231b75;
+    --texto-fundo: #5f55d2;
 }
 
 body{
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-    font-family: "chakra Petch", sans-serif;
+background-color: var(--cor-de-fundo);
+color: var(--branco);
+font-family: "chakra Petch", sans-serif;
 }
 
 .conteudo-principal{
@@ -32,7 +32,7 @@ body{
 }
 
 .titulo-principal span{
-    color:darkorchid;
+        color: var(--botao-ativo)
 }
 
 .botao{
@@ -59,18 +59,43 @@ body{
     border-radius: 40px 40px 0 0;
 }
 
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--botao-inativo);
 }
 
-@media screen and (min-width: 768px)}
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+ @media screen and (min-width: 768px){
     .botoes{
         display: flex;
     }
-    .botao:first-child{
-        border-radius: 40px 0 0 0;
+    .botao:first-child {
+        border-radius: 40px  0 0 0;
     }
     .botao:last-child{
         border-radius: 0 40px 0 0;
-    }  
+    }
+    
+ }
